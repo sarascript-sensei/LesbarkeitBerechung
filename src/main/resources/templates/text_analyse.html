@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Text analyse Form</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Text analyse</h1>
+    <form action="#" th:action="@{/text_analyse}" th:object="${text_analyse}" method="post">
+        <textarea th:field="*{content}" placeholder="Schreiben Sie bitte einen Text."  id="text" name="text" rows="4" style="overflow: hidden; word-wrap: break-word; resize: none; height: 160px; "></textarea>
+        <p><input type="submit" value="Speichern" /> <input type="reset" value="Reset" /></p>
+    </form>
+</body>
+</html>
